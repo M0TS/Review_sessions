@@ -34,13 +34,23 @@ function findNumGreater(arr) {
     return undefined;
 }
 // return arr.find((num) => num > 14);
-console.log(findNumGreater(numbers2));
+// console.log(findNumGreater(numbers2));
 
 
 
 
 
 // Given an array of strings, return the first string with length greater than 4 or undefined if no such string is found
+const fruits = ["apple", "orange", "banana"];
+function findlengthGreater(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].length > 4) {
+            return arr[i];
+        }
+    }
+    return undefined;
+}
+console.log(findlengthGreater(fruits));
 
 
 
