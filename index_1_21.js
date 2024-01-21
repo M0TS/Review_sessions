@@ -7,7 +7,7 @@
 
 
 // Given ab array of numbers and a given target. return the target if it's in the array or undefined if it's not
-const numbers = [1,3,6,9,11];
+const numbers = [1,3,6,9,11,13,15];
 function findNum(arr, target) {
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] === target) {
@@ -19,8 +19,23 @@ function findNum(arr, target) {
 // console.log(findNum(numbers, 6));
 // console.log(findNum(numbers, 5));
 
+// return arr.find((num) => num === target); arrow function solution
+
 
 // Given an array of numbers, return the first number that's bigger than 14 or undefined if no number is bigger than 14
+const numbers2 = [1,3,6,9,11,13,15];
+
+function findNumGreater(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > 14) {
+            return arr[i];
+        }
+    }
+    return undefined;
+}
+// return arr.find((num) => num > 14);
+console.log(findNumGreater(numbers2));
+
 
 
 
