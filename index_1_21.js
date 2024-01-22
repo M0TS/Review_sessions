@@ -41,7 +41,7 @@ function findNumGreater(arr) {
 
 
 // Given an array of strings, return the first string with length greater than 4 or undefined if no such string is found
-const fruits = ["apple", "orange", "banana"];
+const fruits = ["apple", "orange", "banana", "fig"];
 function findlengthGreater(arr) {
     for (let i = 0; i < arr.length; i++) {
         if (arr[i].length > 4) {
@@ -50,7 +50,8 @@ function findlengthGreater(arr) {
     }
     return undefined;
 }
-console.log(findlengthGreater(fruits));
+// console.log(findlengthGreater(fruits));
+
 
 
 
@@ -64,7 +65,22 @@ console.log(findlengthGreater(fruits));
  eyeColor: "green"
 }
 */
+const person = {
+    id: "Y42C_a",
+    name: "Robert",
+    occupation: "Chef",
+    eyeColor: "green"
+   };
 
+function findObjectId(objArr, objId) {
+    for (let i = 0; i < objArr.length; i++) {
+        if (objArr[i].id === objId) {
+            return objArr[i].id;
+        }
+    }
+    return undefined;
+}
+console.log(findObjectId([person], person.id));
 
 // Given an array of objects and a target id return a new object with only the name. The structure for a single object in the array would be as the one above. The returned object would look like this - 
 /*
