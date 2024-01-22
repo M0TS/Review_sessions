@@ -72,9 +72,9 @@ const person = {
     eyeColor: "green"
    };
 
-function findObjectId(objArr, objId) {
+function findObjectId(objArr, targetId) {
     for (let i = 0; i < objArr.length; i++) {
-        if (objArr[i].id === objId) {
+        if (objArr[i].id === targetId) {
             return objArr[i].id;
         }
     }
@@ -88,3 +88,13 @@ console.log(findObjectId([person], person.id));
  name: "Robert"
 }
 */
+
+function findObjectName(objArr, targetName) {
+    for (let i = 0; i < objArr.length; i++) {
+        if (objArr[i].name === targetName) {
+            return objArr[i].name;
+        }
+    }
+    return undefined;
+}
+console.log(findObjectName([person], person.name));
