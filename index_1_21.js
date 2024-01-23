@@ -115,5 +115,11 @@ function findObjectName(objArr, targetId) {
     }
     return undefined;
 }
+
+//for (let obj of arr) {
+//     if (obj.id === targetId) {
+//         return {"name": ojb.name}
+//     }
+// }
 console.log(findObjectName(persons, "Y76C_a"));
 
