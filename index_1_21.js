@@ -110,7 +110,7 @@ console.log(findObjectId(persons, "Y5468"));
 function findObjectName(objArr, targetId) {
     for (let i = 0; i < objArr.length; i++) {
         if (objArr[i].id === targetId) {
-            return {"name": objArr[i].name} ;
+            return {name: objArr[i].name} ;
         }
     }
     return undefined;

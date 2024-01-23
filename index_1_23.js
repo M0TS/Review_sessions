@@ -1,5 +1,10 @@
 // 1.----------------------------------
 // Write a function that takes in a string and returns a new string with every word capitalized. Write your own examples to call the function with.
+function capitalizeString(str) {
+   
+    return str.split(" ").map(str => str[0].toUpperCase() + str.slice(1));
+}
+console.log(capitalizeString(["cat","dog"]));
 
 // 2.----------------------------------
 // Write a function that takes in an object and returns a formatted greeting.
@@ -31,4 +36,4 @@ const john = {
     firstName: "John",
     lastName: "Klaus",
     occupation: "Carpenter"
-  }
+  }*/
