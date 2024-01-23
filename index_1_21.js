@@ -50,6 +50,14 @@ function findlengthGreater(arr) {
     }
     return undefined;
 }
+
+// for (let el of arr) {
+//     if (el.length > 4) {
+//         return el;
+//     }
+//     return undefined;
+// }
+
 // console.log(findlengthGreater(fruits));
 
 
@@ -65,22 +73,34 @@ function findlengthGreater(arr) {
  eyeColor: "green"
 }
 */
-const person = {
+const persons = [{
     id: "Y42C_a",
     name: "Robert",
     occupation: "Chef",
     eyeColor: "green"
-   };
+   },
+   {
+    id: "Y5468",
+    name: "Tom",
+    occupation: "Cop",
+    eyeColor: "blue"
+   },
+   {
+    id: "Y76C_a",
+    name: "Rachel",
+    occupation: "Doctor",
+    eyeColor: "green"
+   }];
 
 function findObjectId(objArr, targetId) {
     for (let i = 0; i < objArr.length; i++) {
         if (objArr[i].id === targetId) {
-            return objArr[i].id;
+            return objArr[i];
         }
     }
     return undefined;
 }
-console.log(findObjectId([person], person.id));
+console.log(findObjectId(persons, "Y5468"));
 
 // Given an array of objects and a target id return a new object with only the name. The structure for a single object in the array would be as the one above. The returned object would look like this - 
 /*
@@ -89,12 +109,12 @@ console.log(findObjectId([person], person.id));
 }
 */
 
-function findObjectName(objArr, targetName) {
-    for (let i = 0; i < objArr.length; i++) {
-        if (objArr[i].name === targetName) {
-            return objArr[i].name;
-        }
-    }
-    return undefined;
-}
-console.log(findObjectName([person], person.name));
+// function findObjectName(objArr, targetName) {
+//     for (let i = 0; i < objArr.length; i++) {
+//         if (objArr[i].name === targetName) {
+//             return objArr[i].name;
+//         }
+//     }
+//     return undefined;
+// }
+// console.log(findObjectName([person], person.name));
