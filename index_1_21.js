@@ -109,12 +109,12 @@ console.log(findObjectId(persons, "Y5468"));
 }
 */
 
-// function findObjectName(objArr, targetName) {
-//     for (let i = 0; i < objArr.length; i++) {
-//         if (objArr[i].name === targetName) {
-//             return objArr[i].name;
-//         }
-//     }
-//     return undefined;
-// }
-// console.log(findObjectName([person], person.name));
+function findObjectName(objArr, targetName) {
+    for (let i = 0; i < objArr.length; i++) {
+        if (objArr[i].name === targetName) {
+            return objArr[i];
+        }
+    }
+    return undefined;
+}
+console.log(findObjectName(persons, "Rachel"));
