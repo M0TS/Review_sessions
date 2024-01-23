@@ -104,17 +104,16 @@ console.log(findObjectId(persons, "Y5468"));
 
 // Given an array of objects and a target id return a new object with only the name. The structure for a single object in the array would be as the one above. The returned object would look like this - 
 /*
-{
- name: "Robert"
-}
+{name: "Robert"}
 */
 
-function findObjectName(objArr, targetName) {
+function findObjectName(objArr, targetId) {
     for (let i = 0; i < objArr.length; i++) {
-        if (objArr[i].name === targetName) {
-            return objArr[i];
+        if (objArr[i].id === targetId) {
+            return {"name": objArr[i].name} ;
         }
     }
     return undefined;
 }
-console.log(findObjectName(persons, "Rachel"));
+console.log(findObjectName(persons, "Y76C_a"));
+
